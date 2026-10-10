@@ -20,5 +20,5 @@ console.log(typeof age);
 console.log(typeof age2);
 console.log(typeof pi);
 console.log(typeof isStudent);
-console.log(typeof nullValue); // object
+console.log(typeof nullValue); // object--->important
 console.log(typeof undefinedValue);
