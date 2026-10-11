@@ -198,3 +198,42 @@ A: No. Hoisting describes declaration handling during execution setup.
 ### One-line memory trick
 
 `var` → `undefined`; `let` and `const` → TDZ and `ReferenceError`; function declaration → callable before its declaration.
+
+Keyword	Scope	Accessible outside an if block?
+var	Function scope (or global scope)	Yes
+let	Block scope	No
+const	Block scope	No
+Important: JavaScript does not stop execution just because a later line will throw an error. It executes the first console.log(), prints 3, and then throws the error on the second one.
+Interview answer
+“This question tests scope in JavaScript. var is function-scoped, so retries is accessible outside the if block. let is block-scoped, so timeout cannot be accessed outside the block and causes a ReferenceError.”
+
+const prevents reassignment of the variable, not modification of the object's properties.
+user.role = "lead"; // Works
+user = { name: "Ravi" }; // TypeError
+
+
+In a switch statement, break stops execution from falling through into subsequent cases.
+else fall-through happens
+
+An empty array is truthy, but its length is 0.
+
+In an if...else if chain, only the first matching branch executes. Put more specific or higher-threshold conditions first when necessary.
+
+for (initialization; condition; update)
+
+const browsers = ["chromium", "firefox"];
+
+for (const b of browsers) {
+  console.log(b);
+}
+
+
+Output:
+chromium
+firefox
+
+
+Interview tip
+Loop	Iterates over	Example output
+for...in	Keys / indexes	0, 1
+for...of	Values	"chromium", "firefox"
