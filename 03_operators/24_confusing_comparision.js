@@ -14,3 +14,7 @@ console.log("" == "0"); // false, both strings, compared as-is
 console.log("" === 0);       // false
 console.log("0" === 0);      // false
 console.log("" === "0");     // false
+
+
+
+
